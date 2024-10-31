@@ -4,7 +4,7 @@
   "description": "gerador de chaves euromilhoes",
   "main": "app.js",
   "scripts": {
-    "start": "node euro.js"
+    "start": "node public/euro.js"
   },
   "author": "pedro moreira",
   "license": "ISC",
