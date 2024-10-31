@@ -1,11 +1,9 @@
-
-
 document.addEventListener('DOMContentLoaded', function (e) {
     button = document.getElementById("genBtn");
     button.addEventListener('click', gerachave);
 
 });
-    
+
 function gerador(n, min, max) {
     extracao = new Set();
 
@@ -36,12 +34,12 @@ function consomeChaveJSON(chavejson) {
 
 function gerachave(e) {
 
-    fetch('http://localhost:3000/euro')
+    fetch('https://trabalho1.onrender.com')
         .then((res => res.json()))
         .then((data) => {
             updatechave(data);
         });
-        
+
 }
 
 function updatechave(chave) {
@@ -53,7 +51,7 @@ function updatechave(chave) {
     an = chave.numeros;
     ae = chave.estrelas;
 
-    
+
     //debugger;
     listanumeros = document.getElementById("olMain");
     listanumeros.innerHTML = "";
@@ -71,5 +69,3 @@ function updatechave(chave) {
         listaestrelas.appendChild(newli);
     })
 }
-
-
